@@ -1,0 +1,26 @@
+<div class="header">
+     <div class="container">
+       <h1>&iquestSayQue?</h1>
+       <h2>Sharing the momentous words we hear <br> from our Spanish-speaking loved ones</h2>
+       <h3>Have words to share?</h3>
+     </div>
+   </div>
+
+   <div class="main">
+     <div class="container">
+      <p>Hola buenos dias</p>
+       
+       <%= form_for (@new_post) do |f| %>
+        <%= f.text_field :comment, :placeholder => "Type your words here" %>
+        <%= f.submit "See your words", :class => 'btn' %>
+    <% end %>
+
+       <ul class="comments">
+           <% @all_posts.each do |p| %>
+             <li><%= p.comment %></li>
+           <% end %>
+        </ul>
+     </div>
+   </div>
+
+   <script src="http://s3.amazonaws.com/codecademy-content/projects/jquery.min.js"></script>
