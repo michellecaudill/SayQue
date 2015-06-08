@@ -2,14 +2,24 @@
      <div class="container">
        <h1>&iquestSayQue?</h1>
        <h2>Sharing the momentous words we hear <br> from our Spanish-speaking loved ones</h2>
-       <h3>Have words to share?</h3>
+       
+       <ul class="nav">
+  <li>Have words to share?
+    <ul>
+      <li id="dropdown"><em>L</em>atinos know all too well the crazy, questionable, and hilarious things our families' say.</li>
+      <li id="dropdown">This site was created as a means of entertainment, as well as, exposing non-Spanish speakers with the delight we hear from family gatherings.</li>
+      <li id="dropdown"><b>Word of Caution:</b> words WILL BE literally translated by Google</li>
+      <li id="dropdown"><font color="black">Have wise words to share? Type 'em up here and add them to the collection</font></li>
+    </ul>
+  </li>
+       
      </div>
    </div>
-
+          
    <div class="main">
      <div class="container">
-      <p>Hola buenos dias</p>
-       
+      <div class="row">
+        <div class="col-md-6">
        <%= form_for (@new_post) do |f| %>
         <%= f.text_field :comment, :placeholder => "Type your words here" %>
         <%= f.submit "See your words", :class => 'btn' %>
@@ -20,6 +30,12 @@
              <li><%= p.comment %></li>
            <% end %>
         </ul>
+
+        </div>
+        <div class="col-md-6">
+          <p>Hola Buenos Dias</p>
+        </div>
+      </div>
      </div>
    </div>
 

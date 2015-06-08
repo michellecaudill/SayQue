@@ -23,14 +23,54 @@ h2 {
  margin-top:-50px;
 }
 
-h3 {
- font-size: 16px;
- color: #FF9900;
- margin-left: 40%;
- padding-top: 40px;
-
+.nav, .nav ul {
+	padding-top: 15px;
+	margin-left: 40%;
+	list-style: none;
+	color: #FF9900;
+	cursor: pointer;
 }
 
+
+.nav li {
+	width: 10em;
+	color: #FF9900;
+	font-size: 18px;
+}
+
+
+.nav li ul {
+	position: absolute;
+	width: 18%;
+	left: -999px;
+	background-color: #fff;
+	border: 3px solid #ee7600;
+}
+
+.nav li:hover ul {
+	left: 0;
+	text-align: center;
+}
+
+#dropdown {
+	color:#FF9900;
+}
+
+
+.btn {
+  background: transparent, #f0f0f0;
+  color: #000;
+  font-size: 30px;
+  text-decoration: none;
+  cursor: pointer;
+  padding-top: 8px;
+  width:640px;
+}
+
+.btn:hover {
+  background:#FF9900;
+  color:#000;
+}
 
 .header {
  margin: 10px 0 100px 80px;
@@ -47,7 +87,7 @@ form {
 }
 
 form input {
- background: #f0f0f0 ;
+ background: #f0f0f0;
  border: none;
  border-left: 2px solid #FF9900;
  font-size: 36px;
@@ -65,21 +105,7 @@ form input:focus {
  transition: background 2s, border-left 2s;
 }
 
-button.btn {
- background: transparent;
- border: none;
- color: #00f28f ;
- cursor: pointer;
- font-size: 36px;
- padding: 20px 24px;
- transition: background 2s, color 1s;
-}
 
-button.btn:hover {
- background: #00f28f ;
- color: #fff;
- transition: background 2s, color 1s;
-}
 
 ul {
  list-style: none;
@@ -88,7 +114,6 @@ ul {
 }
 
 li {
- border-left: 2px solid #000;
  font-size: 36px;
  margin: 0 0 36px;
  opacity: 0;
