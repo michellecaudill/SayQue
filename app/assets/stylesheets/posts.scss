@@ -7,6 +7,10 @@ html, body {
  padding: 0;
 }
 
+.header {
+	padding-top: 30px;
+}
+
 h1 {
  font-size: 48px;
  font-weight: 400;
@@ -21,6 +25,11 @@ h2 {
  padding-left: 65%;
  color: #FF9900;
  margin-top:-50px;
+}
+
+.funky {
+	width: 980px;
+	margin-top: -50px;
 }
 
 .nav, .nav ul {
@@ -41,7 +50,7 @@ h2 {
 
 .nav li ul {
 	position: absolute;
-	width: 18%;
+	width: 200px;
 	left: -999px;
 	background-color: #fff;
 	border: 3px solid #ee7600;
@@ -74,6 +83,10 @@ h2 {
 
 .header {
  margin: 10px 0 100px 80px;
+}
+
+.col-md-6 {
+	width: 50%;
 }
 
 .main {
@@ -158,4 +171,27 @@ li:nth-child(10) {
 }
 li:nth-child(11) {
  opacity: 0;
+}
+
+.footer {
+  background-color: #F90;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer h3 {
+  margin: 24px 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer ul {
+  padding: 0;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.footer li {
+  font-size: 16px;
 }
