@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 html, body {
- font-family: 'Hoefler text', sans-serif;
+ font-family: 'Merriweather', Helvetica;
  margin: 0;
  padding: 0;
 }
@@ -50,18 +50,18 @@ h2 {
 	padding-top: 10px;
 }
 
-
 .nav li ul {
 	position: absolute;
 	width: 200px;
 	left: -999px;
-	background-color: #fff;
-	border: 3px solid #ee7600;
 }
 
 .nav li:hover ul {
 	left: 0;
 	text-align: center;
+	border: 3px solid #ee7600;
+	background-color: white;
+	z-index: 1;
 }
 
 #dropdown {
@@ -70,13 +70,14 @@ h2 {
 
 
 .btn {
-  background: transparent, #f0f0f0;
+  /*background: transparent, #f0f0f0;*/
   color: #000;
   font-size: 30px;
   text-decoration: none;
   cursor: pointer;
   padding-top: 8px;
-  width:640px;
+  width:600px;
+  text-align: center;
 }
 
 .btn:hover {
@@ -85,23 +86,23 @@ h2 {
 }
 
 .header {
- margin: 10px 0 100px 80px;
+ margin: 10px 0 50px 80px;
 }
 
 .row-1 {
-	margin-left:200px;
-	padding:10px 100px 10px 100px;
+	margin-left:50px;
+	padding:0px 100px 100px 100px;
 	font-size: 38px;
-	font-family: Times;
+	font-family: Helvetica Neue;
 	text-align: center;
 
 }
 
 .row-2 {
-	margin-left:200px;
-	padding:10px 40px 10px 40px;
-	font-size: 22px;
-	font-family: Helvetica;
+	margin-left:100px;
+	padding:10px 50px 10px 50px;
+	font-size: 26px;
+	font-family: Georgia;
 	text-align: center;
 
 }
@@ -117,14 +118,15 @@ form {
 }
 
 form input {
- background: #f0f0f0;
+ background: #fff;
  border: none;
  border-left: 2px solid #FF9900;
  font-size: 36px;
- font-family: 'Hoefler text', sans-serif;
+ font-family: 'Helvetica', sans-serif;
  padding: 20px;
  transition: background 2s, border-left 2s;
  width: 600px;
+ text-align: left;
 }
 
 form input:focus {
@@ -154,34 +156,34 @@ li:nth-child(1) {
  opacity: 1;
 }
 li:nth-child(2) {
- opacity: 0.9;
+ opacity: 1;
 }
 li:nth-child(3) {
- opacity: 0.8;
+ opacity: 1;
 }
 li:nth-child(4) {
- opacity: 0.7;
+ opacity: 1;
 }
 li:nth-child(5) {
- opacity: 0.6;
+ opacity: 1;
 }
 li:nth-child(6) {
- opacity: 0.5;
+ opacity: 1;
 }
 li:nth-child(7) {
- opacity: 0.4;
+ opacity: 1;
 }
 li:nth-child(8) {
- opacity: 0.3;
+ opacity: 1;
 }
 li:nth-child(9) {
- opacity: 0.2;
+ opacity: 1;
 }
 li:nth-child(10) {
- opacity: 0.1;
+ opacity: 1;
 }
 li:nth-child(11) {
- opacity: 0;
+ opacity: 1;
 }
 
 .footer {
