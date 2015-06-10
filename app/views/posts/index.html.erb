@@ -18,14 +18,14 @@
 
    <div class="funky">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-6"> <p>Hello</p> </div>
-        <div class="col-sm-6"> <p> Hello</p> </div>
+      <div class="row-1">
+        <div class="col-sm-6"> <p>Me cago en 'na</p> </div>
+        <div class="col-sm-6"> <p>El diablo es eso</p> </div>
       </div>
-      <div class="row">
-        <div class="col-sm-4"> <p>Hello</p> </div>
-        <div class="col-sm-4"> <p> Hello</p> </div>
-        <div class="col-sm-4"> <p> Hello</p> </div>
+      <div class="row-2">
+        <div class="col-sm-4"> <p>No confunde la peste con el olor</p> </div>
+        <div class="col-sm-4"> <p> Camaron que se dureme, corriente lo lleva</p> </div>
+        <div class="col-sm-4"> <p> Por si las moscas</p> </div>
       </div>
     </div>
   </div>
@@ -49,10 +49,18 @@
       <div class="container">
         <h3>Share</h3>
         <ul>
-          <li>Twitter</li>
-          <li>Instagram</li>
-        </ul>
-        <p>&copy; 2015 &iquestSayQue?</p>
+  <li>
+    <%= link_to "http://www.facebook.com/" do %>
+      <%= image_tag 'facebook.png' %>
+    <% end %>
+  </li>
+  <li>
+    <%= link_to "http://www.twitter.com/" do %>
+      <%= image_tag 'twitter.png' %>
+    <% end %>
+  </li>
+</ul>
+        <p><font color=#fff>&copy; 2015 &iquestSayQue?</p>
       </div>
     </div>
 
