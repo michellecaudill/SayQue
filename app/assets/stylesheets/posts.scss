@@ -2,7 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 html, body {
- font-family: 'Merriweather', Helvetica;
+ font-family: 'Playfair Display', serif; 
+ font-weight: 900;
  margin: 0;
  padding: 0;
 }
@@ -12,9 +13,10 @@ html, body {
 	padding-bottom: 0px;
 }
 
-h1 {
- font-size: 48px;
- font-weight: 400;
+h1 { 
+ font-family: 'Playfair Display', serif;
+ font-size: 4em;
+ font-weight: 900;
  margin: 0;
  padding-left: 20px;
  padding-bottom: 20px;
@@ -30,8 +32,10 @@ h2 {
 }
 
 .funky {
-	width: 980px;
+	width: 1080px;
 	margin-top: -100px;
+	//border: 2px solid #FF9900;
+
 }
 
 .nav, .nav ul {
@@ -42,6 +46,23 @@ h2 {
 	cursor: pointer;
 }
 
+.addon p{
+ 	font-family: 'Playfair Display', serif;
+ 	font-size: 1.5em;
+ 	font-weight: 900;
+ 	position: absolute;
+ 	width: 200px;
+ 	left: -999px;
+}
+
+.addon p:hover {
+	left: 100px;
+	text-align: center;
+	border: 3px solid #ee7600;
+	background-color: white;
+	z-index: 1;
+
+}
 
 .nav li {
 	width: 12em;
@@ -58,10 +79,11 @@ h2 {
 
 .nav li:hover ul {
 	left: 0;
-	text-align: center;
+	text-align: left;
 	border: 3px solid #ee7600;
 	background-color: white;
 	z-index: 1;
+	width: 250px;
 }
 
 #dropdown {
@@ -73,11 +95,13 @@ h2 {
   /*background: transparent, #f0f0f0;*/
   color: #000;
   font-size: 30px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
   text-decoration: none;
   cursor: pointer;
   padding-top: 8px;
   width:600px;
-  text-align: center;
+  text-align: left;
 }
 
 .btn:hover {
@@ -92,8 +116,9 @@ h2 {
 .row-1 {
 	margin-left:50px;
 	padding:0px 100px 100px 100px;
-	font-size: 38px;
-	font-family: Helvetica Neue;
+	font-size: 1.5em;
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
 	text-align: center;
 
 }
@@ -102,7 +127,7 @@ h2 {
 	margin-left:100px;
 	padding:10px 50px 10px 50px;
 	font-size: 26px;
-	font-family: Georgia;
+	font-family: Georgia, serif;
 	text-align: center;
 
 }
@@ -117,21 +142,25 @@ form {
  margin: 0 0 100px 0;
 }
 
+
 form input {
- background: #fff;
+ background: #FFF;
  border: none;
- border-left: 2px solid #FF9900;
- font-size: 36px;
- font-family: 'Helvetica', sans-serif;
+ border-bottom: 2px solid #FF9900;
+ font-size: 2em;
+ font-family: 'Playfair', serif;
+ font-weight: 400;
  padding: 20px;
- transition: background 2s, border-left 2s;
+ transition: background 1s, border-left 2s;
  width: 600px;
  text-align: left;
 }
 
+//hover
 form input:focus {
  background: #fff;
- border-left: 2px solid #000;
+ //border: 1px solid #FF9900;
+ //border-left: 2px solid #000;
  box-shadow: none;
  outline: none;
  transition: background 2s, border-left 2s;
@@ -205,4 +234,23 @@ i {
 .right {
 	text-align: right;
 }
+
+.gabriela {
+	margin: 10px;
+}
+
+.spanish {
+	color: #FF9900;
+	text-align: center;
+	font-size: 2em;
+	cursor: pointer;
+}
+
+.english {
+	color: #1abc94;
+	text-align: center;
+	background-color: #9fead7;
+}
+
+
 
