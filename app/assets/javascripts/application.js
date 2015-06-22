@@ -24,10 +24,10 @@ $(document).ready(function(){
 
 
 
-  $('.tooltippy').on('mouseenter', function() {
-    $(this).find(".tooltippy-content").show();
+  $('.translate').on('mouseenter', function() {
+    $(this).find(".translate_control").show();
   }).on('mouseleave', function() {
-    $(this).find(".tooltippy-content").hide();
+    $(this).find(".translate_control").hide();
   })
 
 

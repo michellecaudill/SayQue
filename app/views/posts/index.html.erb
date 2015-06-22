@@ -30,10 +30,10 @@
 
             <div class="col-sm-6">
               <div class="row-1">
-                <li class="tooltippy">
-                  <div class="tooltippy-content">SayQue!</div>
-                  <%= p.comment%>
-                </li>
+                <li class="translate"> <%= p.comment%>
+                  <div class="translate_control" lang="en"></div>
+                 
+                </p>
                 <div id="p"></div>
               </div>
             </div>
@@ -41,9 +41,24 @@
       </ul>
     </div>
   </div>
+ 
+ <div class ="test">
+  <div class="translate">Тестирование</p>
+    <div class="translate_control" lang="en"></div>
+    
+    <script>
+    function googleSectionalElementInit() {
+      new google.translate.SectionalElement({
+        sectionalNodeClassName: 'translate',
+        controlNodeClassName: 'translate_control',
+        background: '#f4fa58'
+      }, 'google_sectional_element');
+    }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleSectionalElementInit&ug=section&hl=en"></script>
 
 
-   
+   </div>
 
 <div class="gabriela">
     
