@@ -1,89 +1,112 @@
+
 <div class="header">
-     <div class="container">
+ <div class="container">
+
+    <div class="row">
+
+      <div class="col-xs-12 col-sm-6 col-md-8">
        <h1>&iquestSayQu‌&#233;?</h1>
-       <h2>Sharing the momentous words we hear <br> from our Spanish-speaking loved ones</h2>
-       
-       <ul class="nav">
-          <li>Have words to share?
-            <ul id="dropdown-ul">
-              <li id="dropdown"><em>L</em>atinos know all too well the crazy, questionable, and hilarious things our families' say.</li>
-              <li id="dropdown">This site was created as a means of entertainment, as well as, exposing non-Spanish speakers with the delight we hear from family gatherings.</li>
-              <li id="dropdown"><b>Word of Caution:</b> words WILL BE literally translated by Google</li>
-              <li id="dropdown"><font color="black">Have wise words to share? Type 'em up here and add them to the collection</font></li>
-            </ul>
-        </li>  
-     </div>
+      </div>
+      
+      <div class="col-xs-6 col-sm-4">
+        <div class="row">
+          <h2>Sharing the momentous words we hear from our Spanish-speaking loved ones</h2>
+        </div>
+        <div class="row">
+          <ul class="nav">
+            <li id="top">Have words to share?
+              <ul id="dropdown-ul">
+                <li><img src="http://dailydropcap.com/images/L-7-cap.png" title="Daily Drop Cap by Jessica Hische" align="left" alt="L"/>atinos know all too well the crazy, questionable, and hilarious things our families' say.</li>
+                <li>This site was created as a means of entertainment, as well as, exposing non-Spanish speakers with the delight we hear from family gatherings.</li>
+                <li style="text-transform: uppercase">Word of Caution: words WILL BE literally translated by Google</li>
+                <li><strong>Have words to share? Type them up to share them to the collection.</strong></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
+<div class="funky">
+  <div class="container">
 
-  <div class="funky">
-    <div class="container">
-       <%= form_for (@new_post) do |f| %>
-        <%= f.text_field :comment, :placeholder => "Share your words here" %>
-        <%= f.submit "See your words", :class => 'btn' %>
-    <% end %>
+      <%= form_for (@new_post) do |f| %>
+      <% if @new_post.errors.any? %>
+      <% @new_post.errors.full_messages.each do |message| %>
+      <% @message = message %> 
+      <% end %>
+      <% end %>
+      <% textbox_msg = @message ? @message : "Share your words here" %>
+      <%= f.text_field :comment, :placeholder =>textbox_msg %>
+      <%= f.submit "See your words", :class => 'seemore' %>
 
-      <ul class="comments">
-
-           <% @all_posts.each do |p| %>
-
-
-            <div class="col-sm-6">
-              <div class="row-1">
-                <li class="translate"> <%= p.comment%>
-                  <div class="translate_control" lang="en"></div>
-                 
-                </p>
-                <div id="p"></div>
-              </div>
-            </div>
-           <% end %>
-      </ul>
-    </div>
   </div>
- 
+</div>
 
-    <script>
-    function googleSectionalElementInit() {
-      new google.translate.SectionalElement({
-        sectionalNodeClassName: 'translate',
-        controlNodeClassName: 'translate_control',
-        background: '#f4fa58'
-      }, 'google_sectional_element');
-    }
-    </script>
-    <script src="//translate.google.com/translate_a/element.js?cb=googleSectionalElementInit&ug=section&hl=en"></script>
-
-
-
-
-   <div class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-        <h3>Share</h3>
-      </div>
-         <div class="col-sm-6 right">
-          <h3>Meet us</h3>
-      </div>
-    </div>
-    <div class="row">
-          <div class="col-sm-3">
-    <%= link_to "http://www.twitter.com/" do %>
-      <i class="fa fa-twitter fa-4x"></i>
-    <% end %>
-  </div>
-        <div class="col-sm-3">
-    <%= link_to "http://www.facebook.com/" do %>
-      <i class="fa fa-facebook fa-4x"></i>
-    <% end %>
+<div class="weird">
+  <div class="container">
+    <ul class="comments">
+      <% @all_posts.each do |p| %>
+        <div class="col-xs-6 col-sm-4">
+          <div class="row-1">
+            <li class="translate"> <%= p.comment%>
+              <div class="translate_control" lang="en"></div>
+            </p>
+          </div>
         </div>
+      <% end %>
+    </ul>
+  </div>
+</div>
+
+<script>
+function googleSectionalElementInit() {
+  new google.translate.SectionalElement({
+    sectionalNodeClassName: 'translate',
+    controlNodeClassName: 'translate_control',
+    background: '#f4fa58'
+  }, 'google_sectional_element');
+}
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleSectionalElementInit&ug=section&hl=en"></script>
+
+<div class="footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-6">
+        <h3>Share Us</h3>
+      </div>
+      <div class="col-sm-6 right">
+        <h3>Meet us</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-3">
+        <%= link_to "http://www.twitter.com/", :target => "_blank" do %>
+          <i class="fa fa-twitter fa-4x"></i>
+        <% end %>
+      </div>
+      <div class="col-sm-3">
+        <%= link_to "http://www.facebook.com/", :target => "_blank" do %>
+          <i class="fa fa-facebook fa-4x"></i>
+        <% end %>
+      </div>
 
       <div class="col-sm-6 right">
-        <p>This project was created with love. Love for our families and the crazy and wonderful things we overhear. We wanted to capture memories, capture the moment and hopefully capture your interest to share and build Quesay some more. Enjoy! </p>
-        <p><font color=#fff>&copy; 2015 &iquestSayQu‌&#233;?</p>
-      </div>
+        <p>This project was created with love. Love for our families and the crazy and wonderful things we overhear. We wanted to capture memories, share the moment and inspire you to be a part of it through SayQu&#233;. Enjoy!</p>
+        <p>This site was designed and developed by Emma &amp; Michelle.</p>
+        <p>&copy; 2015 &iquestSayQu‌&#233;?</p>
       </div>
     </div>
-   
-   
+
+  </div>
+</div> 
+
+<a href="#" class="back-to-top" style="display: inline;">
+  <i class="fa fa-arrow-up"></i>
+</a>
+<% end %>

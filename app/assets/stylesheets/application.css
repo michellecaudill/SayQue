@@ -14,17 +14,51 @@
  *= require_self
  */
 
- .translate { position: relative; }
+ .translate { 
+ 	position: relative;
+ }
 
 .translate_control {
 	display: none;
-	position: absolute;
-	top: 20px;
+	color: #d45455;
+	position: relative;
+	top: 0px;
 	left: 0;
-	min-width: 200px;
-	min-height: 120px;
-	background-color: #FF9900;
-	opacity: 0.3;
+	min-width: 20px;
+	min-height: 5px;
+	/*background-color: #edc278;*/
 	text-decoration: none;
-
+	border-radius: 25px;
+	border: 2px solid #000;
+	transition: color .5s ease-in-out;
  }
+
+.goog-te-gadget-link {
+	color: #d45455;
+	text-decoration: none;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    vertical-align: 7px;
+}
+
+
+.goog-te-gadget-link:hover {
+	color: #d45455;
+	text-decoration: none;
+}
+
+.goog-te-gadget-link:visited {
+	color: #d45455;
+	text-decoration: none;
+}
+
+/*.goog-te-gadget-link span {
+	color: #fff;
+	text-decoration: none;
+}*/
+
+.fa-4x {
+	font-size: 3em;
+}

@@ -35,6 +35,8 @@ $(document).ready(function(){
 
 
 
+
+
 // //plain javascript code
 // var xhr = new XMLHttpRequest();
 // xhr.open("GET", "http://goo.gl/fbsS", false);
